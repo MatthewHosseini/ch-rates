@@ -48,10 +48,11 @@ This project mirrors a common **front-office rates quant** stack: a **curve mode
 We represent the curve (zero yields or par yields by maturity) using **Nelson–Siegel** factor loadings. Diebold–Li treats the Nelson–Siegel betas as **time-varying latent factors**.
 
 For maturities $ \tau_1,\dots,\tau_n $ and time $t$, the measurement equation is:
+
 $$
 \mathbf{y}_t = \mathbf{H}(\lambda)\,\mathbf{x}_t + \boldsymbol{\varepsilon}_t,
 \qquad
-\boldsymbol{\varepsilon}_t \sim \mathcal{N}(\mathbf{0}, \mathbf{R}),
+\boldsymbol{\varepsilon}_t \sim \mathcal{N}(\mathbf{0}, \mathbf{R})
 $$
 where:
 - $\mathbf{y}_t \in \mathbb{R}^{n}$ are observed yields at maturities $\tau$,
